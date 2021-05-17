@@ -1,0 +1,35 @@
+#navbar {
+	background-color: #f8f9fa;
+}
+
+#navbar .navbar-brand img {
+ height: 2rem;
+}
+
+#brands {
+ background-image: url('../images/brand/bg.jpg');
+ background-attachment: fixed;
+ border-top: 3px solid #fff;
+ border-bottom: 3px solid #fff;
+}
+
+#brands img {
+ filter: drop-shadow(0 12px 24px rgba(255,255,255,.5));
+}
+
+#video {
+	background-color: #f8f9fa;
+}
+
+#video .tulisan {
+	padding: 0 5rem 1rem 0;
+}
+
+#video .tulisan p {
+	text-align: justify;
+}
+
+#video .video iframe {
+	height: 22rem;
+	border-radius: 10px;
+}
