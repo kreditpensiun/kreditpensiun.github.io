@@ -25,6 +25,18 @@
  filter: drop-shadow(0 12px 24px rgba(0,0,0,.5)) invert(100%);
 }
 
+#about {
+	margin-top: 3rem;
+}
+
+#about h1, #about .row h2, #about .row .visi p {
+	text-align: center;
+}
+
+#about .row {
+	margin-top: 3rem;
+}
+
 #video .row {
 	padding-top: 3rem;
 }
