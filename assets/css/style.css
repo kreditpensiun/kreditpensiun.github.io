@@ -7,23 +7,26 @@
 }
 
 #brands {
- background-image: url('../images/brand/bg.jpg');
- background-attachment: fixed;
- border-top: 5px solid;
- border-bottom: 5px solid;
- border-image-slice: 1;
- border-width: 5px;
- border-image-source: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+ background-color: #f8f9fa;
+}
+
+#brands .container .row {
+	padding: 0 0 3rem 0;
 }
 
 #brands img {
- filter: invert(70%);
+ filter: invert(50%);
  transition: .35s;
  cursor: pointer;
+ padding-top: 3rem;
 }
 
 #brands img:hover {
- filter: drop-shadow(0 12px 24px rgba(255,255,255,.5)) invert(0%);
+ filter: drop-shadow(0 12px 24px rgba(0,0,0,.5)) invert(100%);
+}
+
+#video .row {
+	padding-top: 3rem;
 }
 
 #video .tulisan {
@@ -67,4 +70,38 @@ footer .sosmed a:nth-child(3) {
 
 footer .sosmed a:nth-child(4) {
 	color: #bb001b;
+}
+
+@media (max-width: 768px) {
+#brands img {
+ filter: invert(100%);
+ transition: 0;
+}
+
+#brands img:hover {
+ filter: drop-shadow(0 0 0 rgba(0,0,0,.5));
+}
+
+#video .tulisan {
+	padding: 1rem;
+}
+
+#video .video iframe {
+	height: 14rem;
+}
+
+#video .row {
+	padding-top: 1rem;
+}
+
+footer .logo {
+	padding-right: 0;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+}
+
+footer .logo img {
+	width: 30%;
+}
 }
