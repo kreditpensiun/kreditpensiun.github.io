@@ -9,16 +9,21 @@
 #brands {
  background-image: url('../images/brand/bg.jpg');
  background-attachment: fixed;
- border-top: 3px solid #fff;
- border-bottom: 3px solid #fff;
+ border-top: 5px solid;
+ border-bottom: 5px solid;
+ border-image-slice: 1;
+ border-width: 5px;
+ border-image-source: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
 }
 
 #brands img {
- filter: drop-shadow(0 12px 24px rgba(255,255,255,.5));
+ filter: invert(70%);
+ transition: .35s;
+ cursor: pointer;
 }
 
-#video {
-	background-color: #f8f9fa;
+#brands img:hover {
+ filter: drop-shadow(0 12px 24px rgba(255,255,255,.5)) invert(0%);
 }
 
 #video .tulisan {
@@ -32,4 +37,34 @@
 #video .video iframe {
 	height: 22rem;
 	border-radius: 10px;
+}
+
+footer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	background-color: #f8f9fa;
+}
+
+footer .logo {
+	padding-right: 7rem;
+}
+
+footer .logo img {
+	width: 100%;
+}
+
+footer .sosmed a:nth-child(1) {
+	color: #25d366;
+}
+
+footer .sosmed a:nth-child(2) {
+	color: #c32aa3;
+}
+
+footer .sosmed a:nth-child(3) {
+	color: #3b5998;
+}
+
+footer .sosmed a:nth-child(4) {
+	color: #bb001b;
 }
