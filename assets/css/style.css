@@ -1,9 +1,17 @@
+html {
+	scroll-behavior: smooth;
+}
+
 #navbar {
 	background-color: #f8f9fa;
 }
 
 #navbar .navbar-brand img {
  height: 2rem;
+}
+
+#carousel {
+	margin-top: 3rem;
 }
 
 #brands {
@@ -54,6 +62,11 @@
 	border-radius: 10px;
 }
 
+#video .video img {
+	width: 100%;
+	border-radius: 10px;
+}
+
 footer {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -85,6 +98,10 @@ footer .sosmed a:nth-child(4) {
 }
 
 @media (max-width: 768px) {
+#carousel {
+	margin-top: 4rem;
+}
+
 #brands img {
  filter: invert(100%);
  transition: 0;
@@ -94,7 +111,16 @@ footer .sosmed a:nth-child(4) {
  filter: drop-shadow(0 0 0 rgba(0,0,0,.5));
 }
 
-#video .tulisan {
+#about .us p, #about li {
+	text-align: justify;
+	padding: 1rem;
+}
+
+#video .tulisan h1 {
+	text-align: center;
+}
+
+#video .tulisan, #video .tulisan p {
 	padding: 1rem;
 }
 
