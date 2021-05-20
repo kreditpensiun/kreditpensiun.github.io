@@ -10,39 +10,77 @@ html {
  height: 2rem;
 }
 
-#carousel {
+.swiper-container {
 	margin-top: 3rem;
 }
 
-#brands {
- background-color: #f8f9fa;
+.swiper-container .swiper-wrapper img {
+	width: 100%;
 }
 
-#brands .container .row {
-	padding: 0 0 3rem 0;
+#visi-misi {
+	margin: 1rem 0 1rem 0;
+	padding: 2rem 0 2rem 0;
+	background-color: #f8f9fa;
 }
 
-#brands img {
- filter: invert(50%);
- transition: .35s;
- cursor: pointer;
- padding-top: 3rem;
-}
-
-#brands img:hover {
- filter: drop-shadow(0 12px 24px rgba(0,0,0,.5)) invert(100%);
-}
-
-#about {
-	margin-top: 3rem;
-}
-
-#about h1, #about .row h2, #about .row .visi p {
+#visi-misi h1, #visi-misi .row .visi p {
 	text-align: center;
 }
 
-#about .row {
-	margin-top: 3rem;
+#about {
+  height: 400px;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 3rem;
+  position: relative;
+}
+
+#about .container .background {
+  height: 280px;
+  width: 100%;
+  background-color: #1c6708;
+  position: relative;
+  top: 70px;
+  border-radius: 30px;
+}
+
+#about .container .background .bungkus {
+  position: relative;
+  display: block;
+  height: 285px;
+  width: 50%;
+  background-image: linear-gradient(to top, #617249 -20%, #bed6a1 80%, #bed6a1 100%);
+  transform: scale(1.2);
+  border-radius: 30px;
+  left: 6rem;
+}
+
+#about .container .background .bungkus img{
+  position: absolute;
+  width: 90%;
+  left: 13px;
+  bottom: 0;
+  top: auto;
+}
+
+#about .container .background .konten {
+  margin-left: -3rem;
+  margin-top: 2rem;
+  margin-right: 5rem;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 0;
+}
+
+#about .container .background .konten h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+#about .container .background .konten p {
+  text-align: justify;
+  color: #fff;
 }
 
 #video .row {
@@ -98,20 +136,54 @@ footer .sosmed a:nth-child(4) {
 }
 
 @media (max-width: 768px) {
-#carousel {
+.swiper-container {
 	margin-top: 4rem;
 }
 
-#brands img {
- filter: invert(100%);
- transition: 0;
+#about {
+  	height: 450px;
+	margin-top: 7rem;
 }
 
-#brands img:hover {
- filter: drop-shadow(0 0 0 rgba(0,0,0,.5));
+#about .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-#about .us p, #about li {
+#about .container .background {
+  top: 0;
+}
+
+#about .container .background .bungkus {
+  height: 310px;
+  width: 100%;
+  transform: scale(1);
+  left: 0;
+}
+
+#about .container .background .bungkus img{
+  width: 80%;
+  left:40px;
+}
+
+#about .container .background .konten {
+  display: block;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 10px;
+  margin: 0;
+  margin-top: -150px;
+  padding: 1rem; 
+  position: relative;
+}
+
+#about .container .background .konten p {
+  margin-bottom: 0;
+}
+
+#visi-misi .us p, #visi-misi li {
 	text-align: justify;
 	padding: 1rem;
 }

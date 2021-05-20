@@ -9,6 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- swiper slider -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    <!-- my css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <link rel="shortcut icon" href="assets/images/logo.ico" />
@@ -32,70 +38,57 @@
                 <a class="nav-link single page-scroll" href="#about">About</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link single page-scroll" href="#video">Our Businesses</a>
+                <a class="nav-link single page-scroll" href="#visi-misi">Visi Misi</a>
               </li>
               <li class="nav-item me-3">
-                <a class="nav-link single page-scroll" href="#">Career</a>
+                <a class="nav-link single page-scroll" href="#video">Our Businesses</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </section>
+    </section>  
 
     <section id="carousel">
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/images/banner/1.webp" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="assets/images/banner/2.webp" class="d-block w-100" alt="...">
-          </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/banner/1.webp"></div>
+          <div class="swiper-slide"><img src="assets/images/banner/2.webp"></div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-    </section>         
-
-    <!-- Brands -->
-    <!-- <section id="brands">
-      <div class="container">
-        <div class="row text-center justify-content-center">
-          <div class="col-md-2 col-6">
-            <img src="assets/images/brand/1.png" class="img-fluid">
-          </div>
-          <div class="col-md-2 col-6">
-            <img src="assets/images/brand/1.png" class="img-fluid">
-          </div>
-          <div class="col-md-2 col-6">
-            <img src="assets/images/brand/1.png" class="img-fluid">
-          </div>
-          <div class="col-md-2 col-6">
-            <img src="assets/images/brand/1.png" class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <!-- Akhir Brands -->  
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>  
+    </section>
 
     <section id="about">
-      <div class="container us">
-        <h1>About Us</h1>
-        <p>PT.TETRA didirikan oleh Maruli Sitohang SE.,MM. merupakan pensiunan dari Bank BTPN yang telah berkarya 35 tahun di perusahaan tersebut. Berbekal pengalaman tersebut, beliau memiliki pandangan untuk memajukan perekonomian Indonesia melalui integrasi produk-produk kredit pensiun perbankan dengan penetrasi teknologi ke calon nasabah.</p>
+      <div class="container">
+        <div class="background">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="bungkus">
+                <img src="assets/images/maruli.png" alt="maruli">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="konten">
+                <h1>About Us</h1>
+                <p>PT.TETRA didirikan oleh Maruli Sitohang SE.,MM. merupakan pensiunan dari Bank BTPN yang telah berkarya 35 tahun di perusahaan tersebut. Berbekal pengalaman tersebut, beliau memiliki pandangan untuk memajukan perekonomian Indonesia melalui integrasi produk-produk kredit pensiun perbankan dengan penetrasi teknologi ke calon nasabah.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="visi-misi">
+      <div class="container">
         <div class="row">
           <div class="col-lg-5 visi">
-            <h2>Visi</h2>
+            <h1>Visi</h1>
             <p>" Menjadi konsultan bisnis pensiun & karyawan aktif, terkemuka dan terbaik di Indonesia, dengan memberikan kepuasan kepada mitra dan nasabah. "</p>
           </div>
           <div class="col-lg-7">
-            <h2>Misi</h2>
+            <h1>Misi</h1>
             <ul>
               <li>Melakukan kegiatan konsultasi perbankan yang terbaik dengan mengutamakan pelayanan kepada mitra</li>
               <li>Memberikan pelayanan kepada nasabah melalui jaringan kerja yang tersebar luas dan didukung oleh sumber daya manusia yang profesional,pantang menyerah dan berintegritas</li>
@@ -110,7 +103,6 @@
       <div class="container">
         <div class="row pb-5">
           <div class="order-lg-2 col-lg-7 video">
-            <!-- <iframe width="100%" src="https://www.youtube.com/embed/DgvLhFh4Bnk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
             <img src="assets/images/business.jpg">
           </div>
           <div class="order-lg-1 col-lg-5 tulisan">
@@ -139,8 +131,6 @@
             <div class="sosmed">
               <h1>
                 <a href="https://api.whatsapp.com/send?phone=6287786130256&text=Hallo ! Saya tertarik untuk mendapatkan informasi mengenai PT.TETRA!" target="_blank"><i class="fab fa-whatsapp mr-2"></i></a> 
-                <!-- <a href="https://www.instagram.com/kreditpensiun.id/" target="_blank"><i class="fab fa-instagram mr-2"></i></a> 
-                <a href="https://www.facebook.com/kredit.pensiun.33" target="_blank"><i class="fab fa-facebook mr-2"></i></a> --> 
                 <a href="mailto:tetrapusat@gmail.com"><i class="far fa-envelope mr-2"></i></a>
               </h1>
               <p>&copy; Copyright <span class="tahun"></span> PT.TETRA. All Rights Reserved</p>
@@ -156,6 +146,9 @@
     <!-- jquery easing -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha512-0QbL0ph8Tc8g5bLhfVzSqxe9GERORsKhIn1IrpxDAgUsbBGz/V7iSav2zzW325XGd1OMLdL4UiqRJj702IeqnQ==" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- swiper slider -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
 
@@ -177,6 +170,16 @@
         });
 
         $('.tahun').html(new Date().getFullYear());
+        const swiper = new Swiper('.swiper-container', {
+          direction: 'horizontal',
+          loop: true,
+          effect: 'coverflow',
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          autoplay: true,
+        });
       });
     </script>
   </body>
